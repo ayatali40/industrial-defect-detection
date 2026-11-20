@@ -1,0 +1,180 @@
+{
+  "generated_at": "2026-11-18T20:09:14+00:00",
+  "dataset_root": "transistor",
+  "requested": [
+    "transistor",
+    "cable",
+    "leather",
+    "bottle",
+    "capsule",
+    "grid"
+  ],
+  "ready_categories": [
+    "transistor",
+    "cable",
+    "leather",
+    "bottle",
+    "capsule",
+    "grid"
+  ],
+  "missing_categories": [],
+  "per_category": {
+    "transistor": {
+      "category": "transistor",
+      "dataset_root": "transistor",
+      "category_dir": "transistor",
+      "data_available": true,
+      "ready": true,
+      "counts": {
+        "categories": 1,
+        "defect_types": 4,
+        "train_good_images": 213,
+        "test_good_images": 60,
+        "test_anomalous_images": 40,
+        "test_total_images": 100,
+        "ground_truth_masks": 40,
+        "anomalous_with_mask": 40
+      },
+      "defect_types": [
+        "bent_lead",
+        "cut_lead",
+        "damaged_case",
+        "misplaced"
+      ],
+      "critical_issues": [],
+      "warnings": []
+    },
+    "cable": {
+      "category": "cable",
+      "dataset_root": "transistor",
+      "category_dir": "cable",
+      "data_available": true,
+      "ready": true,
+      "counts": {
+        "categories": 1,
+        "defect_types": 8,
+        "train_good_images": 224,
+        "test_good_images": 58,
+        "test_anomalous_images": 92,
+        "test_total_images": 150,
+        "ground_truth_masks": 92,
+        "anomalous_with_mask": 92
+      },
+      "defect_types": [
+        "bent_wire",
+        "cable_swap",
+        "combined",
+        "cut_inner_insulation",
+        "cut_outer_insulation",
+        "missing_cable",
+        "missing_wire",
+        "poke_insulation"
+      ],
+      "critical_issues": [],
+      "warnings": []
+    },
+    "leather": {
+      "category": "leather",
+      "dataset_root": "transistor",
+      "category_dir": "leather",
+      "data_available": true,
+      "ready": true,
+      "counts": {
+        "categories": 1,
+        "defect_types": 5,
+        "train_good_images": 245,
+        "test_good_images": 32,
+        "test_anomalous_images": 92,
+        "test_total_images": 124,
+        "ground_truth_masks": 92,
+        "anomalous_with_mask": 92
+      },
+      "defect_types": [
+        "color",
+        "cut",
+        "fold",
+        "glue",
+        "poke"
+      ],
+      "critical_issues": [],
+      "warnings": []
+    },
+    "bottle": {
+      "category": "bottle",
+      "dataset_root": "transistor",
+      "category_dir": "bottle",
+      "data_available": true,
+      "ready": true,
+      "counts": {
+        "categories": 1,
+        "defect_types": 3,
+        "train_good_images": 209,
+        "test_good_images": 20,
+        "test_anomalous_images": 63,
+        "test_total_images": 83,
+        "ground_truth_masks": 63,
+        "anomalous_with_mask": 63
+      },
+      "defect_types": [
+        "broken_large",
+        "broken_small",
+        "contamination"
+      ],
+      "critical_issues": [],
+      "warnings": []
+    },
+    "capsule": {
+      "category": "capsule",
+      "dataset_root": "transistor",
+      "category_dir": "capsule",
+      "data_available": true,
+      "ready": true,
+      "counts": {
+        "categories": 1,
+        "defect_types": 5,
+        "train_good_images": 219,
+        "test_good_images": 23,
+        "test_anomalous_images": 109,
+        "test_total_images": 132,
+        "ground_truth_masks": 109,
+        "anomalous_with_mask": 109
+      },
+      "defect_types": [
+        "crack",
+        "faulty_imprint",
+        "poke",
+        "scratch",
+        "squeeze"
+      ],
+      "critical_issues": [],
+      "warnings": []
+    },
+    "grid": {
+      "category": "grid",
+      "dataset_root": "transistor",
+      "category_dir": "grid",
+      "data_available": true,
+      "ready": true,
+      "counts": {
+        "categories": 1,
+        "defect_types": 5,
+        "train_good_images": 264,
+        "test_good_images": 21,
+        "test_anomalous_images": 57,
+        "test_total_images": 78,
+        "ground_truth_masks": 57,
+        "anomalous_with_mask": 57
+      },
+      "defect_types": [
+        "bent",
+        "broken",
+        "glue",
+        "metal_contamination",
+        "thread"
+      ],
+      "critical_issues": [],
+      "warnings": []
+    }
+  },
+  "note": "Each category is audited independently; missing categories are reported as unavailable and are never replaced with synthetic data."
+}

@@ -1,0 +1,713 @@
+{
+  "aggregation_methods": {
+    "macro_average": "Unweighted arithmetic mean of the per-category values; every evaluated category contributes equally regardless of its test-set size.",
+    "pooled_confusions": "Thresholded precision/recall/F1 recomputed from TP/FP/FN summed across categories. Image rows are weighted by image count; pixel rows by pixel count. AUROC/AP are ranking metrics and are NOT pooled from per-category summaries."
+  },
+  "rows": [
+    {
+      "row_type": "category",
+      "category": "transistor",
+      "model": "patchcore",
+      "n_fit": 170,
+      "n_calibration": 43,
+      "n_test_normal": 60,
+      "n_test_anomalous": 40,
+      "n_test_total": 100,
+      "image_auroc": 0.9883333333333333,
+      "image_average_precision": 0.9866871397835411,
+      "image_precision": 1.0,
+      "image_recall": 0.825,
+      "image_f1": 0.9041095890410958,
+      "pixel_auroc": 0.964429273165842,
+      "pixel_average_precision": 0.6333840158669096,
+      "pixel_precision": 0.5530071437123358,
+      "pixel_recall": 0.6569283891307611,
+      "pixel_f1": 0.6005048735829773,
+      "pro_auc": 0.9441804612868306,
+      "image_threshold": 18.406675491333004,
+      "pixel_threshold": 15.549637312889098,
+      "fit_seconds": 22.89,
+      "inference_seconds": 16.58,
+      "image_confusion": {
+        "tp": 33,
+        "fp": 0,
+        "tn": 60,
+        "fn": 7
+      },
+      "pixel_confusion": {
+        "tp": 831402,
+        "fp": 672018,
+        "tn": 24276792,
+        "fn": 434188
+      }
+    },
+    {
+      "row_type": "category",
+      "category": "transistor",
+      "model": "padim",
+      "n_fit": 170,
+      "n_calibration": 43,
+      "n_test_normal": 60,
+      "n_test_anomalous": 40,
+      "n_test_total": 100,
+      "image_auroc": 0.995,
+      "image_average_precision": 0.992936047827143,
+      "image_precision": 1.0,
+      "image_recall": 0.6,
+      "image_f1": 0.7499999999999999,
+      "pixel_auroc": 0.9829230266037133,
+      "pixel_average_precision": 0.7442552809034815,
+      "pixel_precision": 0.5281341400318879,
+      "pixel_recall": 0.9089942240378005,
+      "pixel_f1": 0.6680974293022549,
+      "pro_auc": 0.9894109466730932,
+      "image_threshold": 68.13442733764637,
+      "pixel_threshold": 19.2513278388977,
+      "fit_seconds": 21.963,
+      "inference_seconds": 14.82,
+      "image_confusion": {
+        "tp": 24,
+        "fp": 0,
+        "tn": 60,
+        "fn": 16
+      },
+      "pixel_confusion": {
+        "tp": 1150414,
+        "fp": 1027847,
+        "tn": 23920963,
+        "fn": 115176
+      }
+    },
+    {
+      "row_type": "category",
+      "category": "cable",
+      "model": "patchcore",
+      "n_fit": 179,
+      "n_calibration": 45,
+      "n_test_normal": 58,
+      "n_test_anomalous": 92,
+      "n_test_total": 150,
+      "image_auroc": 0.9696401799100449,
+      "image_average_precision": 0.9808020900091152,
+      "image_precision": 0.9347826086956522,
+      "image_recall": 0.9347826086956522,
+      "image_f1": 0.9347826086956522,
+      "pixel_auroc": 0.9814775376951935,
+      "pixel_average_precision": 0.6641875928403488,
+      "pixel_precision": 0.3791239811981698,
+      "pixel_recall": 0.9076090265323553,
+      "pixel_f1": 0.5348372124489784,
+      "pro_auc": 0.9799715115945331,
+      "image_threshold": 19.405594482421876,
+      "pixel_threshold": 17.394877634048463,
+      "fit_seconds": 27.88,
+      "inference_seconds": 29.76,
+      "image_confusion": {
+        "tp": 86,
+        "fp": 6,
+        "tn": 52,
+        "fn": 6
+      },
+      "pixel_confusion": {
+        "tp": 1043538,
+        "fp": 1708960,
+        "tn": 36462874,
+        "fn": 106228
+      }
+    },
+    {
+      "row_type": "category",
+      "category": "cable",
+      "model": "padim",
+      "n_fit": 179,
+      "n_calibration": 45,
+      "n_test_normal": 58,
+      "n_test_anomalous": 92,
+      "n_test_total": 150,
+      "image_auroc": 0.9797601199400299,
+      "image_average_precision": 0.9886580055486025,
+      "image_precision": 0.945054945054945,
+      "image_recall": 0.9347826086956522,
+      "image_f1": 0.9398907103825138,
+      "pixel_auroc": 0.9789021938449304,
+      "pixel_average_precision": 0.5925559253888009,
+      "pixel_precision": 0.2838775463642331,
+      "pixel_recall": 0.9523111659241967,
+      "pixel_f1": 0.43737619421774315,
+      "pro_auc": 0.9880611794052007,
+      "image_threshold": 26.402757720947275,
+      "pixel_threshold": 13.344290823936522,
+      "fit_seconds": 26.033,
+      "inference_seconds": 26.08,
+      "image_confusion": {
+        "tp": 86,
+        "fp": 5,
+        "tn": 53,
+        "fn": 6
+      },
+      "pixel_confusion": {
+        "tp": 1094935,
+        "fp": 2762133,
+        "tn": 35409701,
+        "fn": 54831
+      }
+    },
+    {
+      "row_type": "category",
+      "category": "leather",
+      "model": "patchcore",
+      "n_fit": 196,
+      "n_calibration": 49,
+      "n_test_normal": 32,
+      "n_test_anomalous": 92,
+      "n_test_total": 124,
+      "image_auroc": 1.0,
+      "image_average_precision": 1.0000000000000002,
+      "image_precision": 0.92,
+      "image_recall": 1.0,
+      "image_f1": 0.9583333333333334,
+      "pixel_auroc": 0.9889808183662464,
+      "pixel_average_precision": 0.33403071628825354,
+      "pixel_precision": 0.03835521995189864,
+      "pixel_recall": 1.0,
+      "pixel_f1": 0.07387687607267084,
+      "pro_auc": 0.9999948149035802,
+      "image_threshold": 12.147111320495606,
+      "pixel_threshold": 10.856258726119993,
+      "fit_seconds": 28.635,
+      "inference_seconds": 22.37,
+      "image_confusion": {
+        "tp": 92,
+        "fp": 8,
+        "tn": 24,
+        "fn": 0
+      },
+      "pixel_confusion": {
+        "tp": 216968,
+        "fp": 5439837,
+        "tn": 26849051,
+        "fn": 0
+      }
+    },
+    {
+      "row_type": "category",
+      "category": "leather",
+      "model": "padim",
+      "n_fit": 196,
+      "n_calibration": 49,
+      "n_test_normal": 32,
+      "n_test_anomalous": 92,
+      "n_test_total": 124,
+      "image_auroc": 1.0,
+      "image_average_precision": 1.0000000000000002,
+      "image_precision": 0.989247311827957,
+      "image_recall": 1.0,
+      "image_f1": 0.9945945945945946,
+      "pixel_auroc": 0.9787479474286968,
+      "pixel_average_precision": 0.21379787469734732,
+      "pixel_precision": 0.03196967707779399,
+      "pixel_recall": 1.0,
+      "pixel_f1": 0.06195855903115647,
+      "pro_auc": 0.999997972051178,
+      "image_threshold": 19.171790237426734,
+      "pixel_threshold": 8.701247215270996,
+      "fit_seconds": 24.328,
+      "inference_seconds": 21.67,
+      "image_confusion": {
+        "tp": 92,
+        "fp": 1,
+        "tn": 31,
+        "fn": 0
+      },
+      "pixel_confusion": {
+        "tp": 216968,
+        "fp": 6569713,
+        "tn": 25719175,
+        "fn": 0
+      }
+    },
+    {
+      "row_type": "category",
+      "category": "bottle",
+      "model": "patchcore",
+      "n_fit": 167,
+      "n_calibration": 42,
+      "n_test_normal": 20,
+      "n_test_anomalous": 63,
+      "n_test_total": 83,
+      "image_auroc": 1.0,
+      "image_average_precision": 0.9999999999999998,
+      "image_precision": 1.0,
+      "image_recall": 1.0,
+      "image_f1": 1.0,
+      "pixel_auroc": 0.9856464600522399,
+      "pixel_average_precision": 0.7540553924495401,
+      "pixel_precision": 0.2986535226185287,
+      "pixel_recall": 0.9989441891046358,
+      "pixel_f1": 0.45983157689023113,
+      "pro_auc": 0.9996550010693266,
+      "image_threshold": 13.997317371368405,
+      "pixel_threshold": 11.09360751628877,
+      "fit_seconds": 22.738,
+      "inference_seconds": 17.64,
+      "image_confusion": {
+        "tp": 63,
+        "fp": 0,
+        "tn": 20,
+        "fn": 0
+      },
+      "pixel_confusion": {
+        "tp": 1256473,
+        "fp": 2950653,
+        "tn": 17549498,
+        "fn": 1328
+      }
+    },
+    {
+      "row_type": "category",
+      "category": "bottle",
+      "model": "padim",
+      "n_fit": 167,
+      "n_calibration": 42,
+      "n_test_normal": 20,
+      "n_test_anomalous": 63,
+      "n_test_total": 83,
+      "image_auroc": 1.0,
+      "image_average_precision": 0.9999999999999998,
+      "image_precision": 1.0,
+      "image_recall": 0.9841269841269841,
+      "image_f1": 0.9919999999999999,
+      "pixel_auroc": 0.9767473716653714,
+      "pixel_average_precision": 0.5750171407028393,
+      "pixel_precision": 0.25096208297599015,
+      "pixel_recall": 0.9999212912058426,
+      "pixel_f1": 0.40122418321723097,
+      "pro_auc": 0.9998893068140351,
+      "image_threshold": 50.8291510009765,
+      "pixel_threshold": 10.747544345855715,
+      "fit_seconds": 20.521,
+      "inference_seconds": 11.65,
+      "image_confusion": {
+        "tp": 62,
+        "fp": 0,
+        "tn": 20,
+        "fn": 1
+      },
+      "pixel_confusion": {
+        "tp": 1257702,
+        "fp": 3753820,
+        "tn": 16746331,
+        "fn": 99
+      }
+    },
+    {
+      "row_type": "category",
+      "category": "capsule",
+      "model": "patchcore",
+      "n_fit": 175,
+      "n_calibration": 44,
+      "n_test_normal": 23,
+      "n_test_anomalous": 109,
+      "n_test_total": 132,
+      "image_auroc": 0.9517351416035102,
+      "image_average_precision": 0.9883949279979971,
+      "image_precision": 0.9885057471264368,
+      "image_recall": 0.7889908256880734,
+      "image_f1": 0.8775510204081634,
+      "pixel_auroc": 0.9874196710389237,
+      "pixel_average_precision": 0.4424427561712775,
+      "pixel_precision": 0.1687765834828713,
+      "pixel_recall": 0.9425925341579628,
+      "pixel_f1": 0.2862911070794314,
+      "pro_auc": 0.9917970401691333,
+      "image_threshold": 12.670196475982666,
+      "pixel_threshold": 10.63097858428955,
+      "fit_seconds": 27.595,
+      "inference_seconds": 25.28,
+      "image_confusion": {
+        "tp": 86,
+        "fp": 1,
+        "tn": 22,
+        "fn": 23
+      },
+      "pixel_confusion": {
+        "tp": 298717,
+        "fp": 1471179,
+        "tn": 32814919,
+        "fn": 18193
+      }
+    },
+    {
+      "row_type": "category",
+      "category": "capsule",
+      "model": "padim",
+      "n_fit": 175,
+      "n_calibration": 44,
+      "n_test_normal": 23,
+      "n_test_anomalous": 109,
+      "n_test_total": 132,
+      "image_auroc": 0.9541284403669724,
+      "image_average_precision": 0.9880653145698831,
+      "image_precision": 1.0,
+      "image_recall": 0.28440366972477066,
+      "image_f1": 0.44285714285714284,
+      "pixel_auroc": 0.9810942374438933,
+      "pixel_average_precision": 0.35520995125005106,
+      "pixel_precision": 0.1279818499638791,
+      "pixel_recall": 0.9151083903947493,
+      "pixel_f1": 0.22455826004070603,
+      "pro_auc": 0.9935797071723834,
+      "image_threshold": 76.59213027954102,
+      "pixel_threshold": 12.69963619708987,
+      "fit_seconds": 27.256,
+      "inference_seconds": 18.84,
+      "image_confusion": {
+        "tp": 31,
+        "fp": 0,
+        "tn": 23,
+        "fn": 78
+      },
+      "pixel_confusion": {
+        "tp": 290007,
+        "fp": 1975994,
+        "tn": 32310104,
+        "fn": 26903
+      }
+    },
+    {
+      "row_type": "category",
+      "category": "grid",
+      "model": "patchcore",
+      "n_fit": 211,
+      "n_calibration": 53,
+      "n_test_normal": 21,
+      "n_test_anomalous": 57,
+      "n_test_total": 78,
+      "image_auroc": 0.9674185463659147,
+      "image_average_precision": 0.9892514260258436,
+      "image_precision": 0.9814814814814815,
+      "image_recall": 0.9298245614035088,
+      "image_f1": 0.954954954954955,
+      "pixel_auroc": 0.9667554927893162,
+      "pixel_average_precision": 0.2656179212645047,
+      "pixel_precision": 0.08152419921527378,
+      "pixel_recall": 0.8872794787924285,
+      "pixel_f1": 0.1493279817794481,
+      "pro_auc": 0.9502517896401954,
+      "image_threshold": 14.841451873779297,
+      "pixel_threshold": 13.03762177944184,
+      "fit_seconds": 30.262,
+      "inference_seconds": 11.05,
+      "image_confusion": {
+        "tp": 53,
+        "fp": 1,
+        "tn": 20,
+        "fn": 4
+      },
+      "pixel_confusion": {
+        "tp": 132375,
+        "fp": 1491376,
+        "tn": 18806664,
+        "fn": 16817
+      }
+    },
+    {
+      "row_type": "category",
+      "category": "grid",
+      "model": "padim",
+      "n_fit": 211,
+      "n_calibration": 53,
+      "n_test_normal": 21,
+      "n_test_anomalous": 57,
+      "n_test_total": 78,
+      "image_auroc": 0.9097744360902256,
+      "image_average_precision": 0.969413083174709,
+      "image_precision": 0.9387755102040817,
+      "image_recall": 0.8070175438596491,
+      "image_f1": 0.8679245283018868,
+      "pixel_auroc": 0.9284702298157177,
+      "pixel_average_precision": 0.08211341940346835,
+      "pixel_precision": 0.06648110839249259,
+      "pixel_recall": 0.7982398520027884,
+      "pixel_f1": 0.12273987229347662,
+      "pro_auc": 0.872752359375838,
+      "image_threshold": 14.277221794128405,
+      "pixel_threshold": 7.752207977771822,
+      "fit_seconds": 27.769,
+      "inference_seconds": 9.84,
+      "image_confusion": {
+        "tp": 46,
+        "fp": 3,
+        "tn": 18,
+        "fn": 11
+      },
+      "pixel_confusion": {
+        "tp": 119091,
+        "fp": 1672260,
+        "tn": 18625780,
+        "fn": 30101
+      }
+    }
+  ],
+  "aggregates": {
+    "aggregation_methods": {
+      "macro_average": "Unweighted arithmetic mean of the per-category values; every evaluated category contributes equally regardless of its test-set size.",
+      "pooled_confusions": "Thresholded precision/recall/F1 recomputed from TP/FP/FN summed across categories. Image rows are weighted by image count; pixel rows by pixel count. AUROC/AP are ranking metrics and are NOT pooled from per-category summaries."
+    },
+    "evaluated_categories": [
+      "bottle",
+      "cable",
+      "capsule",
+      "grid",
+      "leather",
+      "transistor"
+    ],
+    "per_model": {
+      "patchcore": {
+        "categories": [
+          "transistor",
+          "cable",
+          "leather",
+          "bottle",
+          "capsule",
+          "grid"
+        ],
+        "macro_average": {
+          "image_auroc": 0.979521200202134,
+          "image_average_precision": 0.9908559306360828,
+          "image_precision": 0.9707949728839286,
+          "image_recall": 0.913099665964539,
+          "image_f1": 0.9382885844055333,
+          "pixel_auroc": 0.9791182088512936,
+          "pixel_average_precision": 0.5156197324801389,
+          "pixel_precision": 0.2532401083631797,
+          "pixel_recall": 0.8988922696196906,
+          "pixel_f1": 0.3507782713089562,
+          "pro_auc": 0.9776417697772666
+        },
+        "pooled_confusions": {
+          "image_confusion": {
+            "tp": 413,
+            "fp": 16,
+            "tn": 198,
+            "fn": 40
+          },
+          "image_precision": 0.9627039627039627,
+          "image_recall": 0.9116997792494481,
+          "image_f1": 0.9365079365079366,
+          "pixel_confusion": {
+            "tp": 3779473,
+            "fp": 13734023,
+            "tn": 156759798,
+            "fn": 576754
+          },
+          "pixel_precision": 0.2158034580874087,
+          "pixel_recall": 0.8676023999667603,
+          "pixel_f1": 0.34563519620253075,
+          "n_test_normal": 214,
+          "n_test_anomalous": 453
+        }
+      },
+      "padim": {
+        "categories": [
+          "transistor",
+          "cable",
+          "leather",
+          "bottle",
+          "capsule",
+          "grid"
+        ],
+        "macro_average": {
+          "image_auroc": 0.973110499399538,
+          "image_average_precision": 0.9898454085200563,
+          "image_precision": 0.9788462945144972,
+          "image_recall": 0.7683884677345093,
+          "image_f1": 0.8312111626893564,
+          "pixel_auroc": 0.9711475011337205,
+          "pixel_average_precision": 0.42715826539099805,
+          "pixel_precision": 0.2149010674677128,
+          "pixel_recall": 0.9290958205942296,
+          "pixel_f1": 0.3193257496837614,
+          "pro_auc": 0.9739485785819547
+        },
+        "pooled_confusions": {
+          "image_confusion": {
+            "tp": 341,
+            "fp": 9,
+            "tn": 205,
+            "fn": 112
+          },
+          "image_precision": 0.9742857142857143,
+          "image_recall": 0.7527593818984547,
+          "image_f1": 0.8493150684931506,
+          "pixel_confusion": {
+            "tp": 4129117,
+            "fp": 17761767,
+            "tn": 152732054,
+            "fn": 227110
+          },
+          "pixel_precision": 0.18862267051435658,
+          "pixel_recall": 0.9478654349279778,
+          "pixel_f1": 0.31463401819727893,
+          "n_test_normal": 214,
+          "n_test_anomalous": 453
+        }
+      }
+    }
+  },
+  "rankings": {
+    "image_auroc": {
+      "available": true,
+      "metric": "image_auroc",
+      "easiest": {
+        "category": "leather",
+        "model": "patchcore",
+        "value": 1.0
+      },
+      "hardest": {
+        "category": "grid",
+        "model": "padim",
+        "value": 0.9097744360902256
+      },
+      "ranked": [
+        {
+          "category": "leather",
+          "model": "patchcore",
+          "value": 1.0
+        },
+        {
+          "category": "leather",
+          "model": "padim",
+          "value": 1.0
+        },
+        {
+          "category": "bottle",
+          "model": "patchcore",
+          "value": 1.0
+        },
+        {
+          "category": "bottle",
+          "model": "padim",
+          "value": 1.0
+        },
+        {
+          "category": "transistor",
+          "model": "padim",
+          "value": 0.995
+        },
+        {
+          "category": "transistor",
+          "model": "patchcore",
+          "value": 0.9883333333333333
+        },
+        {
+          "category": "cable",
+          "model": "padim",
+          "value": 0.9797601199400299
+        },
+        {
+          "category": "cable",
+          "model": "patchcore",
+          "value": 0.9696401799100449
+        },
+        {
+          "category": "grid",
+          "model": "patchcore",
+          "value": 0.9674185463659147
+        },
+        {
+          "category": "capsule",
+          "model": "padim",
+          "value": 0.9541284403669724
+        },
+        {
+          "category": "capsule",
+          "model": "patchcore",
+          "value": 0.9517351416035102
+        },
+        {
+          "category": "grid",
+          "model": "padim",
+          "value": 0.9097744360902256
+        }
+      ]
+    },
+    "pro_auc": {
+      "available": true,
+      "metric": "pro_auc",
+      "easiest": {
+        "category": "leather",
+        "model": "padim",
+        "value": 0.999997972051178
+      },
+      "hardest": {
+        "category": "grid",
+        "model": "padim",
+        "value": 0.872752359375838
+      },
+      "ranked": [
+        {
+          "category": "leather",
+          "model": "padim",
+          "value": 0.999997972051178
+        },
+        {
+          "category": "leather",
+          "model": "patchcore",
+          "value": 0.9999948149035802
+        },
+        {
+          "category": "bottle",
+          "model": "padim",
+          "value": 0.9998893068140351
+        },
+        {
+          "category": "bottle",
+          "model": "patchcore",
+          "value": 0.9996550010693266
+        },
+        {
+          "category": "capsule",
+          "model": "padim",
+          "value": 0.9935797071723834
+        },
+        {
+          "category": "capsule",
+          "model": "patchcore",
+          "value": 0.9917970401691333
+        },
+        {
+          "category": "transistor",
+          "model": "padim",
+          "value": 0.9894109466730932
+        },
+        {
+          "category": "cable",
+          "model": "padim",
+          "value": 0.9880611794052007
+        },
+        {
+          "category": "cable",
+          "model": "patchcore",
+          "value": 0.9799715115945331
+        },
+        {
+          "category": "grid",
+          "model": "patchcore",
+          "value": 0.9502517896401954
+        },
+        {
+          "category": "transistor",
+          "model": "patchcore",
+          "value": 0.9441804612868306
+        },
+        {
+          "category": "grid",
+          "model": "padim",
+          "value": 0.872752359375838
+        }
+      ]
+    }
+  },
+  "csv": "reports/metrics/cross_category_metrics.csv"
+}

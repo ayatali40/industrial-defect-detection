@@ -1,0 +1,153 @@
+{
+  "false_positives": [],
+  "false_negatives": [
+    {
+      "relative_path": "test/bent_lead/001.png",
+      "defect_type": "bent_lead",
+      "score": 26.055347442626953,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/bent_lead/002.png",
+      "defect_type": "bent_lead",
+      "score": 59.7422981262207,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/bent_lead/003.png",
+      "defect_type": "bent_lead",
+      "score": 62.397926330566406,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/bent_lead/004.png",
+      "defect_type": "bent_lead",
+      "score": 62.35995101928711,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/cut_lead/000.png",
+      "defect_type": "cut_lead",
+      "score": 65.54534912109375,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/cut_lead/001.png",
+      "defect_type": "cut_lead",
+      "score": 58.29331970214844,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/cut_lead/002.png",
+      "defect_type": "cut_lead",
+      "score": 34.18189239501953,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/cut_lead/003.png",
+      "defect_type": "cut_lead",
+      "score": 67.36579132080078,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/cut_lead/005.png",
+      "defect_type": "cut_lead",
+      "score": 55.05255126953125,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/cut_lead/007.png",
+      "defect_type": "cut_lead",
+      "score": 43.69035720825195,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/damaged_case/000.png",
+      "defect_type": "damaged_case",
+      "score": 53.074562072753906,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/damaged_case/002.png",
+      "defect_type": "damaged_case",
+      "score": 66.8515853881836,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/damaged_case/003.png",
+      "defect_type": "damaged_case",
+      "score": 43.30336380004883,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/damaged_case/005.png",
+      "defect_type": "damaged_case",
+      "score": 66.14322662353516,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/damaged_case/006.png",
+      "defect_type": "damaged_case",
+      "score": 35.86970901489258,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/damaged_case/007.png",
+      "defect_type": "damaged_case",
+      "score": 48.469669342041016,
+      "localization_hit": true
+    }
+  ],
+  "per_defect_type": {
+    "bent_lead": {
+      "images": 10,
+      "detected": 6,
+      "missed": 4,
+      "detection_rate": 0.6,
+      "mean_score": 94.44150199890137,
+      "min_score": 26.055347442626953,
+      "max_score": 205.1741943359375,
+      "localization_hits": 10,
+      "localization_rate": 1.0
+    },
+    "cut_lead": {
+      "images": 10,
+      "detected": 4,
+      "missed": 6,
+      "detection_rate": 0.4,
+      "mean_score": 71.60212593078613,
+      "min_score": 34.18189239501953,
+      "max_score": 121.31864929199219,
+      "localization_hits": 10,
+      "localization_rate": 1.0
+    },
+    "damaged_case": {
+      "images": 10,
+      "detected": 4,
+      "missed": 6,
+      "detection_rate": 0.4,
+      "mean_score": 75.66011772155761,
+      "min_score": 35.86970901489258,
+      "max_score": 132.58473205566406,
+      "localization_hits": 10,
+      "localization_rate": 1.0
+    },
+    "misplaced": {
+      "images": 10,
+      "detected": 10,
+      "missed": 0,
+      "detection_rate": 1.0,
+      "mean_score": 254.59318161010742,
+      "min_score": 95.9541244506836,
+      "max_score": 462.2687683105469,
+      "localization_hits": 10,
+      "localization_rate": 1.0
+    }
+  },
+  "localization": {
+    "anomalous_images": 40,
+    "images_with_overlap": 40,
+    "localization_rate": 1.0,
+    "note": "A hit means the predicted defect region overlaps the ground-truth mask."
+  }
+}

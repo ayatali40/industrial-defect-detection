@@ -1,0 +1,62 @@
+{
+  "stage": "full",
+  "trained_at": "2026-11-18T00:07:07+00:00",
+  "category": "cable",
+  "model": "padim",
+  "fit_images": 179,
+  "fit_seconds": 26.033,
+  "seed": 42,
+  "batch_size": 8,
+  "image_size": 224,
+  "device": "cpu",
+  "normal_only": true,
+  "test_data_used": false,
+  "split_manifest": "data/processed/splits/cable.json",
+  "stats": {
+    "fit_images": 179,
+    "positions": 784,
+    "n_features": 150,
+    "feature_grid": [
+      28,
+      28
+    ],
+    "covariance_epsilon": 0.01,
+    "train_distance_mean": 63.970359802246094,
+    "train_distance_std": 12.14837646484375
+  },
+  "environment": {
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python": "3.10.9",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "cpu_count_logical": 12,
+    "torch_threads": 8,
+    "ram_total_gb": 7.95,
+    "cuda_available": false,
+    "cuda_device": null,
+    "torch": "2.10.0+cpu",
+    "torchvision": "0.25.0",
+    "numpy": "1.26.4",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.15.3",
+    "pillow": "10.4.0"
+  },
+  "artifact_validation": {
+    "reload_seconds": 0.507,
+    "scores_original": [
+      8.724178314208984,
+      12.968626976013184
+    ],
+    "scores_reloaded": [
+      8.724178314208984,
+      12.968626976013184
+    ],
+    "max_abs_score_diff": 0.0,
+    "max_abs_map_diff": 0.0,
+    "finite_outputs": true,
+    "passed": true,
+    "artifact_bytes": 71043653,
+    "artifact": "models/cable/padim/artifact.pt",
+    "artifact_metadata_model": "padim"
+  },
+  "save_seconds": 0.214
+}

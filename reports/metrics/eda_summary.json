@@ -1,0 +1,541 @@
+{
+  "category": "transistor",
+  "dataset_root": "transistor",
+  "counts": {
+    "train/good": 213,
+    "test/good": 60,
+    "test/bent_lead": 10,
+    "test/cut_lead": 10,
+    "test/damaged_case": 10,
+    "test/misplaced": 10,
+    "test/anomalous": 40
+  },
+  "per_defect_type": {
+    "bent_lead": 10,
+    "cut_lead": 10,
+    "damaged_case": 10,
+    "misplaced": 10
+  },
+  "masks": 40,
+  "image_properties": {
+    "train image sizes": {
+      "1024x1024": 213
+    },
+    "test image sizes": {
+      "1024x1024": 100
+    },
+    "train colour modes": {
+      "RGB": 213
+    },
+    "test colour modes": {
+      "RGB": 100
+    },
+    "train formats": {
+      "PNG": 213
+    },
+    "test formats": {
+      "PNG": 100
+    }
+  },
+  "appearance": {
+    "normal train (sampled)": {
+      "images": 22,
+      "grey_mean": 0.3053177283568816,
+      "grey_std_mean": 0.15802638164975427,
+      "grey_std_min": 0.15200327336788177,
+      "grey_std_max": 0.16889293491840363,
+      "saturation_mean": 0.6581365195187655,
+      "per_image": {
+        "grey_mean": [
+          0.3076668083667755,
+          0.29777735471725464,
+          0.30428940057754517,
+          0.3185405135154724,
+          0.2952840030193329,
+          0.2845613956451416,
+          0.30700913071632385,
+          0.30974480509757996,
+          0.3176531195640564,
+          0.2987613379955292,
+          0.31204918026924133,
+          0.3118349611759186,
+          0.29867613315582275,
+          0.30938223004341125,
+          0.29782116413116455,
+          0.29835665225982666,
+          0.3151572346687317,
+          0.31734219193458557,
+          0.2938691973686218,
+          0.3109014928340912,
+          0.2988196611404419,
+          0.31149205565452576
+        ],
+        "grey_std": [
+          0.15460984408855438,
+          0.15484867990016937,
+          0.15374313294887543,
+          0.16446173191070557,
+          0.15200327336788177,
+          0.153846874833107,
+          0.16060154139995575,
+          0.15485961735248566,
+          0.16889293491840363,
+          0.1564917415380478,
+          0.163345605134964,
+          0.15554074943065643,
+          0.1580055207014084,
+          0.16112463176250458,
+          0.15208286046981812,
+          0.152194082736969,
+          0.15891271829605103,
+          0.1609642207622528,
+          0.15487760305404663,
+          0.16155818104743958,
+          0.1612725704908371,
+          0.16234228014945984
+        ],
+        "saturation": [
+          0.6519841551780701,
+          0.668856143951416,
+          0.6303570866584778,
+          0.6150854229927063,
+          0.6432192325592041,
+          0.6503283977508545,
+          0.6522682905197144,
+          0.66712486743927,
+          0.6492155194282532,
+          0.6704398989677429,
+          0.6556028723716736,
+          0.6620729565620422,
+          0.6672201156616211,
+          0.6589782238006592,
+          0.6768783926963806,
+          0.683331310749054,
+          0.6753845810890198,
+          0.6609383225440979,
+          0.6675488948822021,
+          0.6557220220565796,
+          0.6630123853683472,
+          0.6534343361854553
+        ]
+      }
+    },
+    "anomalous test (sampled)": {
+      "images": 20,
+      "grey_mean": 0.3150806695222855,
+      "grey_std_mean": 0.15987338796257972,
+      "grey_std_min": 0.13670647144317627,
+      "grey_std_max": 0.17065708339214325,
+      "saturation_mean": 0.6474250853061676,
+      "per_image": {
+        "grey_mean": [
+          0.3148804008960724,
+          0.316008985042572,
+          0.3127942979335785,
+          0.3220084011554718,
+          0.3133871555328369,
+          0.29961568117141724,
+          0.2992113530635834,
+          0.30676406621932983,
+          0.3167923390865326,
+          0.3198297321796417,
+          0.2986137568950653,
+          0.30631470680236816,
+          0.3092741370201111,
+          0.29768064618110657,
+          0.3168024718761444,
+          0.32299500703811646,
+          0.38882553577423096,
+          0.3216271698474884,
+          0.31057778000831604,
+          0.30760976672172546
+        ],
+        "grey_std": [
+          0.1664007306098938,
+          0.1639084666967392,
+          0.16512298583984375,
+          0.1636483073234558,
+          0.16267313063144684,
+          0.16162478923797607,
+          0.15903882682323456,
+          0.16031652688980103,
+          0.1651345193386078,
+          0.16517318785190582,
+          0.1539212316274643,
+          0.16019921004772186,
+          0.1612996757030487,
+          0.15512239933013916,
+          0.1592036783695221,
+          0.1606294810771942,
+          0.13670647144317627,
+          0.17065708339214325,
+          0.15279777348041534,
+          0.15388928353786469
+        ],
+        "saturation": [
+          0.6508504152297974,
+          0.6447442173957825,
+          0.6612951755523682,
+          0.6411094069480896,
+          0.6650881171226501,
+          0.6695842742919922,
+          0.6694956421852112,
+          0.6708431243896484,
+          0.6488891839981079,
+          0.6413537263870239,
+          0.6495948433876038,
+          0.6406825184822083,
+          0.6480575203895569,
+          0.6527404189109802,
+          0.6407018303871155,
+          0.642534613609314,
+          0.6050511598587036,
+          0.6404129266738892,
+          0.6573084592819214,
+          0.6081641316413879
+        ]
+      }
+    }
+  },
+  "defect_masks": {
+    "bent_lead": {
+      "masks": 10,
+      "area_fraction": {
+        "min": 0.0022373199462890625,
+        "median": 0.010278701782226562,
+        "mean": 0.01599607467651367,
+        "max": 0.036469459533691406
+      },
+      "components": {
+        "min": 1,
+        "median": 1.0,
+        "max": 2
+      },
+      "largest_component_area_fraction": {
+        "median": 0.010278701782226562,
+        "max": 0.036469459533691406
+      },
+      "items": [
+        {
+          "area_fraction": 0.004277229309082031,
+          "components": 1,
+          "largest_area_fraction": 0.004277229309082031,
+          "largest_bbox_fraction": 0.0057392120361328125
+        },
+        {
+          "area_fraction": 0.0022373199462890625,
+          "components": 1,
+          "largest_area_fraction": 0.0022373199462890625,
+          "largest_bbox_fraction": 0.0026607513427734375
+        },
+        {
+          "area_fraction": 0.011347770690917969,
+          "components": 1,
+          "largest_area_fraction": 0.011347770690917969,
+          "largest_bbox_fraction": 0.018367767333984375
+        },
+        {
+          "area_fraction": 0.009209632873535156,
+          "components": 1,
+          "largest_area_fraction": 0.009209632873535156,
+          "largest_bbox_fraction": 0.015878677368164062
+        },
+        {
+          "area_fraction": 0.0038442611694335938,
+          "components": 1,
+          "largest_area_fraction": 0.0038442611694335938,
+          "largest_bbox_fraction": 0.0062084197998046875
+        },
+        {
+          "area_fraction": 0.015924453735351562,
+          "components": 1,
+          "largest_area_fraction": 0.015924453735351562,
+          "largest_bbox_fraction": 0.04057884216308594
+        },
+        {
+          "area_fraction": 0.03579235076904297,
+          "components": 1,
+          "largest_area_fraction": 0.03579235076904297,
+          "largest_bbox_fraction": 0.13420867919921875
+        },
+        {
+          "area_fraction": 0.031861305236816406,
+          "components": 1,
+          "largest_area_fraction": 0.031861305236816406,
+          "largest_bbox_fraction": 0.08855438232421875
+        },
+        {
+          "area_fraction": 0.036469459533691406,
+          "components": 1,
+          "largest_area_fraction": 0.036469459533691406,
+          "largest_bbox_fraction": 0.06539249420166016
+        },
+        {
+          "area_fraction": 0.008996963500976562,
+          "components": 2,
+          "largest_area_fraction": 0.0048999786376953125,
+          "largest_bbox_fraction": 0.0085601806640625
+        }
+      ]
+    },
+    "cut_lead": {
+      "masks": 10,
+      "area_fraction": {
+        "min": 0.010195732116699219,
+        "median": 0.014795780181884766,
+        "mean": 0.01638936996459961,
+        "max": 0.035805702209472656
+      },
+      "components": {
+        "min": 1,
+        "median": 1.0,
+        "max": 2
+      },
+      "largest_component_area_fraction": {
+        "median": 0.014795780181884766,
+        "max": 0.019852638244628906
+      },
+      "items": [
+        {
+          "area_fraction": 0.011250495910644531,
+          "components": 1,
+          "largest_area_fraction": 0.011250495910644531,
+          "largest_bbox_fraction": 0.0208282470703125
+        },
+        {
+          "area_fraction": 0.017922401428222656,
+          "components": 1,
+          "largest_area_fraction": 0.017922401428222656,
+          "largest_bbox_fraction": 0.038051605224609375
+        },
+        {
+          "area_fraction": 0.010378837585449219,
+          "components": 1,
+          "largest_area_fraction": 0.010378837585449219,
+          "largest_bbox_fraction": 0.014101982116699219
+        },
+        {
+          "area_fraction": 0.01425933837890625,
+          "components": 1,
+          "largest_area_fraction": 0.01425933837890625,
+          "largest_bbox_fraction": 0.03574848175048828
+        },
+        {
+          "area_fraction": 0.035805702209472656,
+          "components": 2,
+          "largest_area_fraction": 0.018492698669433594,
+          "largest_bbox_fraction": 0.0464630126953125
+        },
+        {
+          "area_fraction": 0.011323928833007812,
+          "components": 1,
+          "largest_area_fraction": 0.011323928833007812,
+          "largest_bbox_fraction": 0.0171661376953125
+        },
+        {
+          "area_fraction": 0.015332221984863281,
+          "components": 1,
+          "largest_area_fraction": 0.015332221984863281,
+          "largest_bbox_fraction": 0.03562164306640625
+        },
+        {
+          "area_fraction": 0.010195732116699219,
+          "components": 1,
+          "largest_area_fraction": 0.010195732116699219,
+          "largest_bbox_fraction": 0.019618988037109375
+        },
+        {
+          "area_fraction": 0.019852638244628906,
+          "components": 1,
+          "largest_area_fraction": 0.019852638244628906,
+          "largest_bbox_fraction": 0.05092620849609375
+        },
+        {
+          "area_fraction": 0.017572402954101562,
+          "components": 1,
+          "largest_area_fraction": 0.017572402954101562,
+          "largest_bbox_fraction": 0.030933380126953125
+        }
+      ]
+    },
+    "damaged_case": {
+      "masks": 10,
+      "area_fraction": {
+        "min": 0.0063343048095703125,
+        "median": 0.023068904876708984,
+        "mean": 0.028483009338378905,
+        "max": 0.05351448059082031
+      },
+      "components": {
+        "min": 1,
+        "median": 1.0,
+        "max": 2
+      },
+      "largest_component_area_fraction": {
+        "median": 0.021813392639160156,
+        "max": 0.05351448059082031
+      },
+      "items": [
+        {
+          "area_fraction": 0.014863014221191406,
+          "components": 2,
+          "largest_area_fraction": 0.011878013610839844,
+          "largest_bbox_fraction": 0.032932281494140625
+        },
+        {
+          "area_fraction": 0.05351448059082031,
+          "components": 1,
+          "largest_area_fraction": 0.05351448059082031,
+          "largest_bbox_fraction": 0.07089614868164062
+        },
+        {
+          "area_fraction": 0.0063343048095703125,
+          "components": 1,
+          "largest_area_fraction": 0.0063343048095703125,
+          "largest_bbox_fraction": 0.00914764404296875
+        },
+        {
+          "area_fraction": 0.014904022216796875,
+          "components": 1,
+          "largest_area_fraction": 0.014904022216796875,
+          "largest_bbox_fraction": 0.03252410888671875
+        },
+        {
+          "area_fraction": 0.025423049926757812,
+          "components": 2,
+          "largest_area_fraction": 0.022912025451660156,
+          "largest_bbox_fraction": 0.041133880615234375
+        },
+        {
+          "area_fraction": 0.034946441650390625,
+          "components": 1,
+          "largest_area_fraction": 0.034946441650390625,
+          "largest_bbox_fraction": 0.06870079040527344
+        },
+        {
+          "area_fraction": 0.020714759826660156,
+          "components": 1,
+          "largest_area_fraction": 0.020714759826660156,
+          "largest_bbox_fraction": 0.06920623779296875
+        },
+        {
+          "area_fraction": 0.012912750244140625,
+          "components": 1,
+          "largest_area_fraction": 0.012912750244140625,
+          "largest_bbox_fraction": 0.020330429077148438
+        },
+        {
+          "area_fraction": 0.050502777099609375,
+          "components": 1,
+          "largest_area_fraction": 0.050502777099609375,
+          "largest_bbox_fraction": 0.09237384796142578
+        },
+        {
+          "area_fraction": 0.05071449279785156,
+          "components": 1,
+          "largest_area_fraction": 0.05071449279785156,
+          "largest_bbox_fraction": 0.07135772705078125
+        }
+      ]
+    },
+    "misplaced": {
+      "masks": 10,
+      "area_fraction": {
+        "min": 0.37734127044677734,
+        "median": 0.40454578399658203,
+        "mean": 0.4184514045715332,
+        "max": 0.49320507049560547
+      },
+      "components": {
+        "min": 1,
+        "median": 1.0,
+        "max": 1
+      },
+      "largest_component_area_fraction": {
+        "median": 0.40454578399658203,
+        "max": 0.49320507049560547
+      },
+      "items": [
+        {
+          "area_fraction": 0.40343666076660156,
+          "components": 1,
+          "largest_area_fraction": 0.40343666076660156,
+          "largest_bbox_fraction": 0.4786720275878906
+        },
+        {
+          "area_fraction": 0.40856456756591797,
+          "components": 1,
+          "largest_area_fraction": 0.40856456756591797,
+          "largest_bbox_fraction": 0.5910015106201172
+        },
+        {
+          "area_fraction": 0.3792724609375,
+          "components": 1,
+          "largest_area_fraction": 0.3792724609375,
+          "largest_bbox_fraction": 0.43373870849609375
+        },
+        {
+          "area_fraction": 0.37734127044677734,
+          "components": 1,
+          "largest_area_fraction": 0.37734127044677734,
+          "largest_bbox_fraction": 0.4355812072753906
+        },
+        {
+          "area_fraction": 0.4042701721191406,
+          "components": 1,
+          "largest_area_fraction": 0.4042701721191406,
+          "largest_bbox_fraction": 0.4319000244140625
+        },
+        {
+          "area_fraction": 0.4293375015258789,
+          "components": 1,
+          "largest_area_fraction": 0.4293375015258789,
+          "largest_bbox_fraction": 0.5908012390136719
+        },
+        {
+          "area_fraction": 0.40482139587402344,
+          "components": 1,
+          "largest_area_fraction": 0.40482139587402344,
+          "largest_bbox_fraction": 0.5004358291625977
+        },
+        {
+          "area_fraction": 0.4888267517089844,
+          "components": 1,
+          "largest_area_fraction": 0.4888267517089844,
+          "largest_bbox_fraction": 0.7727165222167969
+        },
+        {
+          "area_fraction": 0.49320507049560547,
+          "components": 1,
+          "largest_area_fraction": 0.49320507049560547,
+          "largest_bbox_fraction": 0.7421684265136719
+        },
+        {
+          "area_fraction": 0.39543819427490234,
+          "components": 1,
+          "largest_area_fraction": 0.39543819427490234,
+          "largest_bbox_fraction": 0.5163536071777344
+        }
+      ]
+    }
+  },
+  "observations": [
+    "Training data contains 213 defect-free images; the test split has 60 normal and 40 anomalous images with 40 masks.",
+    "Ground-truth defects cover 0.22% to 49.32% of an image (median 2.03%), so image-level detection and pixel-level localisation are genuinely different problems on this category.",
+    "Defect types: bent_lead (10), cut_lead (10), damaged_case (10), misplaced (10).",
+    "All images share one acquisition setup, but illumination and viewpoint vary between captures.",
+    "Defect type misplaced covers a median 40.5% of the image, while the other types cover medians of 1.0-2.3%; pooled pixel metrics are therefore dominated by the large misplaced masks."
+  ],
+  "notes": [
+    "Descriptive EDA only; no test annotation was used for training, calibration or model selection.",
+    "Normal images have no ground-truth masks.",
+    "The test split appears here for dataset characterisation and error-analysis context."
+  ],
+  "figures": {
+    "normal_training_samples.png": "reports/figures/eda/normal_training_samples.png",
+    "anomalous_test_samples.png": "reports/figures/eda/anomalous_test_samples.png",
+    "split_and_defect_counts.png": "reports/figures/eda/split_and_defect_counts.png",
+    "defect_area_distribution.png": "reports/figures/eda/defect_area_distribution.png",
+    "appearance_scatter.png": "reports/figures/eda/appearance_scatter.png"
+  }
+}

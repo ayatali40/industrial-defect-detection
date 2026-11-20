@@ -1,0 +1,111 @@
+{
+  "generated_at": "2026-11-18T20:20:49+00:00",
+  "models": [
+    "patchcore",
+    "padim"
+  ],
+  "categories": [
+    {
+      "category": "bottle",
+      "status": "evaluated",
+      "models": {
+        "patchcore": {
+          "image_auroc": 1.0,
+          "image_average_precision": 0.9999999999999998,
+          "pixel_auroc": 0.9856464600522399,
+          "pro_auc": 0.9996550010693266,
+          "image_threshold": 13.997317371368405,
+          "pixel_threshold": 11.09360751628877,
+          "counts": {
+            "normal": 20,
+            "anomalous": 63,
+            "total": 83
+          },
+          "predictions_csv": "reports/predictions/bottle/patchcore_test_predictions.csv"
+        },
+        "padim": {
+          "image_auroc": 1.0,
+          "image_average_precision": 0.9999999999999998,
+          "pixel_auroc": 0.9767473716653714,
+          "pro_auc": 0.9998893068140351,
+          "image_threshold": 50.8291510009765,
+          "pixel_threshold": 10.747544345855715,
+          "counts": {
+            "normal": 20,
+            "anomalous": 63,
+            "total": 83
+          },
+          "predictions_csv": "reports/predictions/bottle/padim_test_predictions.csv"
+        }
+      }
+    },
+    {
+      "category": "capsule",
+      "status": "evaluated",
+      "models": {
+        "patchcore": {
+          "image_auroc": 0.9517351416035102,
+          "image_average_precision": 0.9883949279979971,
+          "pixel_auroc": 0.9874196710389237,
+          "pro_auc": 0.9917970401691333,
+          "image_threshold": 12.670196475982666,
+          "pixel_threshold": 10.63097858428955,
+          "counts": {
+            "normal": 23,
+            "anomalous": 109,
+            "total": 132
+          },
+          "predictions_csv": "reports/predictions/capsule/patchcore_test_predictions.csv"
+        },
+        "padim": {
+          "image_auroc": 0.9541284403669724,
+          "image_average_precision": 0.9880653145698831,
+          "pixel_auroc": 0.9810942374438933,
+          "pro_auc": 0.9935797071723834,
+          "image_threshold": 76.59213027954102,
+          "pixel_threshold": 12.69963619708987,
+          "counts": {
+            "normal": 23,
+            "anomalous": 109,
+            "total": 132
+          },
+          "predictions_csv": "reports/predictions/capsule/padim_test_predictions.csv"
+        }
+      }
+    },
+    {
+      "category": "grid",
+      "status": "evaluated",
+      "models": {
+        "patchcore": {
+          "image_auroc": 0.9674185463659147,
+          "image_average_precision": 0.9892514260258436,
+          "pixel_auroc": 0.9667554927893162,
+          "pro_auc": 0.9502517896401954,
+          "image_threshold": 14.841451873779297,
+          "pixel_threshold": 13.03762177944184,
+          "counts": {
+            "normal": 21,
+            "anomalous": 57,
+            "total": 78
+          },
+          "predictions_csv": "reports/predictions/grid/patchcore_test_predictions.csv"
+        },
+        "padim": {
+          "image_auroc": 0.9097744360902256,
+          "image_average_precision": 0.969413083174709,
+          "pixel_auroc": 0.9284702298157177,
+          "pro_auc": 0.872752359375838,
+          "image_threshold": 14.277221794128405,
+          "pixel_threshold": 7.752207977771822,
+          "counts": {
+            "normal": 21,
+            "anomalous": 57,
+            "total": 78
+          },
+          "predictions_csv": "reports/predictions/grid/padim_test_predictions.csv"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,414 @@
+{
+  "generated_at": "2026-11-18T20:33:28+00:00",
+  "git_repository_initialized": false,
+  "ignore_patterns": {
+    "bottle/": true,
+    "cable/": true,
+    "capsule/": true,
+    "carpet/": true,
+    "grid/": true,
+    "hazelnut/": true,
+    "leather/": true,
+    "metal_nut/": true,
+    "pill/": true,
+    "screw/": true,
+    "tile/": true,
+    "toothbrush/": true,
+    "transistor/": true,
+    "wood/": true,
+    "zipper/": true,
+    "data/mvtec_ad/": true,
+    "models/**": true,
+    "*.pt": true,
+    "reports/predictions/": true,
+    "*.npz": true,
+    "__pycache__/": true,
+    ".pytest_cache/": true,
+    ".env": true
+  },
+  "candidate_files": 307,
+  "candidate_total_bytes": 254474072,
+  "large_files": [
+    {
+      "path": "reports/figures/leather/patchcore/correct_detections_true_negatives.png",
+      "bytes": 5802963,
+      "human": "5.5 MB"
+    },
+    {
+      "path": "reports/figures/leather/padim/correct_detections_true_negatives.png",
+      "bytes": 5800933,
+      "human": "5.5 MB"
+    },
+    {
+      "path": "reports/figures/leather/patchcore/false_positives.png",
+      "bytes": 5745337,
+      "human": "5.5 MB"
+    },
+    {
+      "path": "notebooks/02_anomaly_detection_experiments.ipynb",
+      "bytes": 5716050,
+      "human": "5.5 MB"
+    },
+    {
+      "path": "reports/figures/cable/patchcore/correct_detections_true_negatives.png",
+      "bytes": 5147330,
+      "human": "4.9 MB"
+    },
+    {
+      "path": "reports/figures/cable/patchcore/false_negatives.png",
+      "bytes": 5086287,
+      "human": "4.9 MB"
+    },
+    {
+      "path": "reports/figures/cable/patchcore/false_positives.png",
+      "bytes": 5041423,
+      "human": "4.8 MB"
+    },
+    {
+      "path": "reports/figures/leather/patchcore/correct_detections_true_positives.png",
+      "bytes": 4921180,
+      "human": "4.7 MB"
+    },
+    {
+      "path": "reports/figures/cable/padim/correct_detections_true_negatives.png",
+      "bytes": 4917487,
+      "human": "4.7 MB"
+    },
+    {
+      "path": "reports/figures/cable/padim/false_negatives.png",
+      "bytes": 4877292,
+      "human": "4.7 MB"
+    },
+    {
+      "path": "reports/figures/cable/patchcore/correct_detections_true_positives.png",
+      "bytes": 4663488,
+      "human": "4.4 MB"
+    },
+    {
+      "path": "reports/figures/leather/padim/correct_detections_true_positives.png",
+      "bytes": 4646357,
+      "human": "4.4 MB"
+    },
+    {
+      "path": "reports/figures/capsule/patchcore/correct_detections_true_negatives.png",
+      "bytes": 4599167,
+      "human": "4.4 MB"
+    },
+    {
+      "path": "reports/figures/capsule/patchcore/false_negatives.png",
+      "bytes": 4534439,
+      "human": "4.3 MB"
+    },
+    {
+      "path": "reports/figures/bottle/patchcore/correct_detections_true_negatives.png",
+      "bytes": 4303073,
+      "human": "4.1 MB"
+    },
+    {
+      "path": "reports/figures/transistor/patchcore/correct_detections_true_negatives.png",
+      "bytes": 4249291,
+      "human": "4.1 MB"
+    },
+    {
+      "path": "reports/figures/patchcore/correct_detections_true_negatives.png",
+      "bytes": 4247769,
+      "human": "4.1 MB"
+    },
+    {
+      "path": "reports/figures/capsule/patchcore/correct_detections_true_positives.png",
+      "bytes": 4243613,
+      "human": "4.0 MB"
+    },
+    {
+      "path": "reports/figures/capsule/padim/correct_detections_true_negatives.png",
+      "bytes": 4227787,
+      "human": "4.0 MB"
+    },
+    {
+      "path": "reports/figures/grid/patchcore/correct_detections_true_negatives.png",
+      "bytes": 4226368,
+      "human": "4.0 MB"
+    },
+    {
+      "path": "reports/figures/cable/padim/correct_detections_true_positives.png",
+      "bytes": 4201253,
+      "human": "4.0 MB"
+    },
+    {
+      "path": "reports/figures/grid/padim/correct_detections_true_negatives.png",
+      "bytes": 4190347,
+      "human": "4.0 MB"
+    },
+    {
+      "path": "reports/figures/transistor/patchcore/false_negatives.png",
+      "bytes": 4161107,
+      "human": "4.0 MB"
+    },
+    {
+      "path": "reports/figures/patchcore/false_negatives.png",
+      "bytes": 4159799,
+      "human": "4.0 MB"
+    },
+    {
+      "path": "reports/figures/grid/padim/false_negatives.png",
+      "bytes": 4146689,
+      "human": "4.0 MB"
+    },
+    {
+      "path": "reports/figures/capsule/padim/false_negatives.png",
+      "bytes": 4074754,
+      "human": "3.9 MB"
+    },
+    {
+      "path": "reports/figures/cable/padim/false_positives.png",
+      "bytes": 4024772,
+      "human": "3.8 MB"
+    },
+    {
+      "path": "reports/figures/grid/patchcore/correct_detections_true_positives.png",
+      "bytes": 4001288,
+      "human": "3.8 MB"
+    },
+    {
+      "path": "reports/figures/bottle/padim/correct_detections_true_negatives.png",
+      "bytes": 3823486,
+      "human": "3.6 MB"
+    },
+    {
+      "path": "reports/figures/transistor/patchcore/correct_detections_true_positives.png",
+      "bytes": 3805635,
+      "human": "3.6 MB"
+    },
+    {
+      "path": "reports/figures/patchcore/correct_detections_true_positives.png",
+      "bytes": 3804230,
+      "human": "3.6 MB"
+    },
+    {
+      "path": "reports/figures/transistor/padim/correct_detections_true_negatives.png",
+      "bytes": 3787684,
+      "human": "3.6 MB"
+    },
+    {
+      "path": "reports/figures/padim/correct_detections_true_negatives.png",
+      "bytes": 3785731,
+      "human": "3.6 MB"
+    },
+    {
+      "path": "reports/figures/capsule/padim/correct_detections_true_positives.png",
+      "bytes": 3765019,
+      "human": "3.6 MB"
+    },
+    {
+      "path": "reports/figures/bottle/patchcore/correct_detections_true_positives.png",
+      "bytes": 3724518,
+      "human": "3.6 MB"
+    },
+    {
+      "path": "reports/figures/transistor/padim/false_negatives.png",
+      "bytes": 3675903,
+      "human": "3.5 MB"
+    },
+    {
+      "path": "reports/figures/padim/false_negatives.png",
+      "bytes": 3675058,
+      "human": "3.5 MB"
+    },
+    {
+      "path": "notebooks/03_results_and_interpretation.ipynb",
+      "bytes": 3539358,
+      "human": "3.4 MB"
+    },
+    {
+      "path": "reports/figures/grid/padim/correct_detections_true_positives.png",
+      "bytes": 3418783,
+      "human": "3.3 MB"
+    },
+    {
+      "path": "reports/figures/transistor/padim/correct_detections_true_positives.png",
+      "bytes": 3410106,
+      "human": "3.3 MB"
+    },
+    {
+      "path": "reports/figures/padim/correct_detections_true_positives.png",
+      "bytes": 3408420,
+      "human": "3.3 MB"
+    },
+    {
+      "path": "reports/figures/bottle/padim/correct_detections_true_positives.png",
+      "bytes": 2901701,
+      "human": "2.8 MB"
+    },
+    {
+      "path": "reports/figures/grid/patchcore/false_negatives.png",
+      "bytes": 2776978,
+      "human": "2.6 MB"
+    },
+    {
+      "path": "reports/figures/leather/eda/normal_training_samples.png",
+      "bytes": 2672965,
+      "human": "2.5 MB"
+    },
+    {
+      "path": "reports/figures/cable/eda/normal_training_samples.png",
+      "bytes": 2504781,
+      "human": "2.4 MB"
+    },
+    {
+      "path": "reports/figures/cable/eda/anomalous_test_samples.png",
+      "bytes": 2273643,
+      "human": "2.2 MB"
+    },
+    {
+      "path": "reports/figures/capsule/eda/normal_training_samples.png",
+      "bytes": 2199294,
+      "human": "2.1 MB"
+    },
+    {
+      "path": "notebooks/01_dataset_exploration.ipynb",
+      "bytes": 1994840,
+      "human": "1.9 MB"
+    },
+    {
+      "path": "reports/figures/eda/normal_training_samples.png",
+      "bytes": 1974072,
+      "human": "1.9 MB"
+    },
+    {
+      "path": "reports/figures/transistor/eda/normal_training_samples.png",
+      "bytes": 1974072,
+      "human": "1.9 MB"
+    },
+    {
+      "path": "reports/figures/grid/padim/false_positives.png",
+      "bytes": 1932766,
+      "human": "1.8 MB"
+    },
+    {
+      "path": "reports/figures/eda/anomalous_test_samples.png",
+      "bytes": 1796765,
+      "human": "1.7 MB"
+    },
+    {
+      "path": "reports/figures/transistor/eda/anomalous_test_samples.png",
+      "bytes": 1796765,
+      "human": "1.7 MB"
+    },
+    {
+      "path": "reports/figures/bottle/eda/normal_training_samples.png",
+      "bytes": 1767810,
+      "human": "1.7 MB"
+    },
+    {
+      "path": "reports/figures/leather/eda/anomalous_test_samples.png",
+      "bytes": 1657958,
+      "human": "1.6 MB"
+    },
+    {
+      "path": "reports/figures/grid/eda/normal_training_samples.png",
+      "bytes": 1407600,
+      "human": "1.3 MB"
+    },
+    {
+      "path": "reports/figures/capsule/eda/anomalous_test_samples.png",
+      "bytes": 1269651,
+      "human": "1.2 MB"
+    },
+    {
+      "path": "reports/figures/leather/padim/inspection_true_negative.png",
+      "bytes": 1265957,
+      "human": "1.2 MB"
+    },
+    {
+      "path": "reports/figures/bottle/eda/anomalous_test_samples.png",
+      "bytes": 1236977,
+      "human": "1.2 MB"
+    },
+    {
+      "path": "reports/figures/leather/patchcore/inspection_true_negative.png",
+      "bytes": 1230599,
+      "human": "1.2 MB"
+    },
+    {
+      "path": "reports/figures/leather/patchcore/inspection_true_positive.png",
+      "bytes": 1109787,
+      "human": "1.1 MB"
+    },
+    {
+      "path": "reports/figures/leather/padim/inspection_true_positive.png",
+      "bytes": 1078993,
+      "human": "1.0 MB"
+    },
+    {
+      "path": "reports/figures/cable/patchcore/inspection_false_negative.png",
+      "bytes": 1073055,
+      "human": "1.0 MB"
+    },
+    {
+      "path": "reports/figures/cable/patchcore/inspection_true_negative.png",
+      "bytes": 1066603,
+      "human": "1.0 MB"
+    },
+    {
+      "path": "reports/figures/cable/patchcore/inspection_true_positive.png",
+      "bytes": 1056838,
+      "human": "1.0 MB"
+    },
+    {
+      "path": "reports/figures/cable/padim/inspection_false_negative.png",
+      "bytes": 1054280,
+      "human": "1.0 MB"
+    },
+    {
+      "path": "reports/figures/cable/padim/inspection_true_negative.png",
+      "bytes": 1036167,
+      "human": "1011.9 KB"
+    },
+    {
+      "path": "reports/figures/capsule/patchcore/inspection_false_negative.png",
+      "bytes": 1021569,
+      "human": "997.6 KB"
+    },
+    {
+      "path": "reports/figures/capsule/patchcore/inspection_true_negative.png",
+      "bytes": 1011215,
+      "human": "987.5 KB"
+    }
+  ],
+  "absolute_path_hits": [],
+  "secret_pattern_hits": [],
+  "dataset_categories_present": [
+    "transistor"
+  ],
+  "data_raw_files": [
+    "README.md"
+  ],
+  "trained_binaries_present_but_ignored": [
+    "models/bottle/padim/artifact.pt",
+    "models/bottle/patchcore/artifact.pt",
+    "models/cable/padim/artifact.pt",
+    "models/cable/patchcore/artifact.pt",
+    "models/capsule/padim/artifact.pt",
+    "models/capsule/patchcore/artifact.pt",
+    "models/grid/padim/artifact.pt",
+    "models/grid/patchcore/artifact.pt",
+    "models/leather/padim/artifact.pt",
+    "models/leather/patchcore/artifact.pt",
+    "models/transistor/padim/artifact.pt",
+    "models/transistor/patchcore-smoke/artifact.pt",
+    "models/transistor/patchcore/artifact.pt"
+  ],
+  "dataset_candidates": [],
+  "binary_candidates": [],
+  "checks": {
+    "all_category_dirs_ignored": true,
+    "dataset_root_ignored": true,
+    "binaries_ignored": true,
+    "predictions_ignored": true,
+    "no_absolute_user_paths": true,
+    "no_secret_like_values": true,
+    "no_file_over_10mb": true,
+    "dataset_files_excluded": true,
+    "binaries_excluded": true
+  }
+}

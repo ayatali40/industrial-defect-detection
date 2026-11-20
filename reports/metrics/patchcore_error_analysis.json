@@ -1,0 +1,99 @@
+{
+  "false_positives": [],
+  "false_negatives": [
+    {
+      "relative_path": "test/bent_lead/001.png",
+      "defect_type": "bent_lead",
+      "score": 17.525453567504883,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/cut_lead/001.png",
+      "defect_type": "cut_lead",
+      "score": 18.290517807006836,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/cut_lead/002.png",
+      "defect_type": "cut_lead",
+      "score": 18.255504608154297,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/cut_lead/007.png",
+      "defect_type": "cut_lead",
+      "score": 18.167757034301758,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/damaged_case/002.png",
+      "defect_type": "damaged_case",
+      "score": 17.619123458862305,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/misplaced/002.png",
+      "defect_type": "misplaced",
+      "score": 16.822397232055664,
+      "localization_hit": true
+    },
+    {
+      "relative_path": "test/misplaced/003.png",
+      "defect_type": "misplaced",
+      "score": 16.23261260986328,
+      "localization_hit": true
+    }
+  ],
+  "per_defect_type": {
+    "bent_lead": {
+      "images": 10,
+      "detected": 9,
+      "missed": 1,
+      "detection_rate": 0.9,
+      "mean_score": 20.532205009460448,
+      "min_score": 17.525453567504883,
+      "max_score": 24.066837310791016,
+      "localization_hits": 10,
+      "localization_rate": 1.0
+    },
+    "cut_lead": {
+      "images": 10,
+      "detected": 7,
+      "missed": 3,
+      "detection_rate": 0.7,
+      "mean_score": 19.2239933013916,
+      "min_score": 18.167757034301758,
+      "max_score": 21.250185012817383,
+      "localization_hits": 10,
+      "localization_rate": 1.0
+    },
+    "damaged_case": {
+      "images": 10,
+      "detected": 9,
+      "missed": 1,
+      "detection_rate": 0.9,
+      "mean_score": 20.622285270690917,
+      "min_score": 17.619123458862305,
+      "max_score": 24.571918487548828,
+      "localization_hits": 10,
+      "localization_rate": 1.0
+    },
+    "misplaced": {
+      "images": 10,
+      "detected": 8,
+      "missed": 2,
+      "detection_rate": 0.8,
+      "mean_score": 22.109427833557127,
+      "min_score": 16.23261260986328,
+      "max_score": 28.673757553100586,
+      "localization_hits": 10,
+      "localization_rate": 1.0
+    }
+  },
+  "localization": {
+    "anomalous_images": 40,
+    "images_with_overlap": 40,
+    "localization_rate": 1.0,
+    "note": "A hit means the predicted defect region overlaps the ground-truth mask."
+  }
+}

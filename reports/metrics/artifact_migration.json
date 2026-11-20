@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-11-17T23:35:31+00:00",
+  "note": "Layout migration only; no model weights or thresholds were changed.",
+  "records": [
+    {
+      "category": "transistor",
+      "model": "patchcore",
+      "status": "migrated",
+      "artifact": "models/transistor/patchcore/artifact.pt",
+      "verification": {
+        "verified": true,
+        "images": 100,
+        "max_abs_score_diff": 3.552713678800501e-15,
+        "mean_abs_score_diff": 4.973799150320702e-16,
+        "passed": true
+      }
+    },
+    {
+      "category": "transistor",
+      "model": "padim",
+      "status": "migrated",
+      "artifact": "models/transistor/padim/artifact.pt",
+      "verification": {
+        "verified": true,
+        "images": 100,
+        "max_abs_score_diff": 5.684341886080802e-14,
+        "mean_abs_score_diff": 1.6342482922482305e-15,
+        "passed": true
+      }
+    }
+  ]
+}

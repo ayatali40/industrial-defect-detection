@@ -1,0 +1,63 @@
+# Industrial Defect Detection - central configuration.
+# All paths are relative to the project root unless absolute paths are supplied.
+project:
+  name: industrial-defect-detection
+  seed: 42
+  device: auto          # auto | cpu | cuda
+  num_threads: 8        # keep below the 12 available threads to leave headroom
+paths:
+  data_root: transistor            # either an MVTec AD root (bottle/, cable/, ...) or one category folder
+  models_dir: models
+  reports_dir: reports
+  figures_dir: reports/figures
+  metrics_dir: reports/metrics
+  predictions_dir: reports/predictions
+  processed_dir: data/processed
+data:
+  category: transistor     # default category for single-category commands
+  # FINAL, FROZEN SCOPE. These six categories are the only supported categories.
+  # The other nine MVTec AD categories are intentionally out of scope: they must
+  # not be downloaded, trained, evaluated or served by the CLI/app.
+  supported_categories: [transistor, cable, leather, bottle, capsule, grid]
+  categories: [transistor, cable, leather, bottle, capsule, grid]  # active scope ('--categories active'); must be a subset of supported_categories
+  # Per-category dataset folders for the supported categories. Each folder
+  # lives next to the project folder with one extra nesting level.
+  category_roots:
+    cable: ../cable/cable
+    leather: ../leather/leather
+    bottle: ../bottle/bottle
+    capsule: ../capsule/capsule
+    grid: ../grid/grid
+  image_size: 224
+  num_workers: 0        # 0 is intentional: avoids extra memory pressure on an 8 GB CPU-only machine
+  batch_size: 8
+  train_batch_size: 8
+  eval_batch_size: 8
+  normal_split:
+    val_fraction: 0.2
+    seed: 42
+models:
+  backbone:
+    name: resnet50
+    pretrained: true
+    layers: [layer2, layer3]
+  patchcore:
+    projection_dim: 256
+    max_candidate_patches: 15000
+    coreset_ratio: 0.01
+    smooth_sigma: 4.0
+  padim:
+    n_features: 150
+    covariance_epsilon: 0.01
+    smooth_sigma: 4.0
+thresholds:
+  image_percentile: 99.0
+  pixel_percentile: 99.5
+evaluation:
+  pixel_size: 512
+  pro:
+    fpr_limit: 0.3
+    steps: 100
+  max_examples_per_error_type: 6
+inference:
+  output_dir: reports/predictions/cli

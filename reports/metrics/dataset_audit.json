@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-11-17T22:41:57+00:00",
+  "dataset": {
+    "root": "transistor",
+    "root_exists": true,
+    "category": "transistor",
+    "category_dir": "transistor",
+    "categories_available": []
+  },
+  "counts": {
+    "categories": 1,
+    "defect_types": 4,
+    "train_good_images": 213,
+    "test_good_images": 60,
+    "test_anomalous_images": 40,
+    "test_total_images": 100,
+    "ground_truth_masks": 40,
+    "anomalous_with_mask": 40
+  },
+  "defect_types": {
+    "bent_lead": {
+      "test_images": 10,
+      "masks": 10,
+      "mean_mask_area_fraction": 0.01599607467651367
+    },
+    "cut_lead": {
+      "test_images": 10,
+      "masks": 10,
+      "mean_mask_area_fraction": 0.01638936996459961
+    },
+    "damaged_case": {
+      "test_images": 10,
+      "masks": 10,
+      "mean_mask_area_fraction": 0.028483009338378905
+    },
+    "misplaced": {
+      "test_images": 10,
+      "masks": 10,
+      "mean_mask_area_fraction": 0.4184514045715332
+    }
+  },
+  "image_summary": {
+    "dimensions": {
+      "1024x1024": 313
+    },
+    "formats": {
+      "PNG": 313
+    },
+    "modes": {
+      "RGB": 313
+    },
+    "masks": {
+      "dimensions": {
+        "1024x1024": 40
+      },
+      "modes": {
+        "L": 40
+      }
+    }
+  },
+  "mask_alignment": {
+    "anomalous_test_images": 40,
+    "masks_present": 40,
+    "aligned": 40,
+    "missing_masks": [],
+    "dimension_mismatches": [],
+    "empty_masks": [],
+    "non_binary_masks": [],
+    "orphan_masks": [],
+    "mask_positive_fraction": {}
+  },
+  "duplicates": {
+    "duplicate_paths": [],
+    "duplicate_content_groups": []
+  },
+  "checks": {
+    "dataset_root_exists": {
+      "passed": true,
+      "detail": "transistor"
+    },
+    "category_layout": {
+      "passed": true,
+      "detail": "transistor"
+    },
+    "required_directories": {
+      "passed": true,
+      "detail": {
+        "train": true,
+        "test": true
+      }
+    },
+    "normal_training_labels": {
+      "passed": true,
+      "detail": {
+        "training_class_dirs": [
+          "good"
+        ],
+        "loose_image_files": []
+      }
+    },
+    "test_good_split": {
+      "passed": true,
+      "detail": [
+        "bent_lead",
+        "cut_lead",
+        "damaged_case",
+        "good",
+        "misplaced"
+      ]
+    },
+    "train_images_readable": {
+      "passed": true,
+      "detail": "213/213 readable"
+    },
+    "test_images_readable": {
+      "passed": true,
+      "detail": "100/100 readable"
+    },
+    "masks_cover_anomalies": {
+      "passed": true,
+      "detail": "40/40 anomalous images have masks"
+    },
+    "mask_dimensions_match": {
+      "passed": true,
+      "detail": "0 mismatches"
+    },
+    "masks_binary_and_nonempty": {
+      "passed": true,
+      "detail": "0 non-binary, 0 empty"
+    },
+    "no_duplicate_paths": {
+      "passed": true,
+      "detail": "0 duplicated relative paths"
+    },
+    "dataset_ready": {
+      "passed": true,
+      "detail": "0 critical issue(s)"
+    }
+  },
+  "issues": [],
+  "provenance": {
+    "source": "https://www.mvtec.com/research-teaching/datasets/mvtec-ad",
+    "license": "CC BY-NC-SA 4.0",
+    "citation": "Paul Bergmann, Michael Fauser, David Sattlegger, and Carsten Steger, \"A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection\", IEEE Conference on Computer Vision and Pattern Recognition, 2019",
+    "files_present": [
+      "readme.txt",
+      "license.txt"
+    ]
+  }
+}

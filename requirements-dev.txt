@@ -1,0 +1,7 @@
+-r requirements.txt
+pytest==9.1.1
+ruff>=0.6
+nbformat==5.11.1
+nbconvert==7.17.1
+notebook==7.6.3
+jupyter

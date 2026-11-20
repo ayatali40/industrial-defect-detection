@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-11-18T20:13:17+00:00",
+  "models": [
+    "patchcore",
+    "padim"
+  ],
+  "device": "cpu",
+  "smoke_tag": null,
+  "environment": {
+    "platform": "Windows-10-10.0.26300-SP0",
+    "python": "3.10.9",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "cpu_count_logical": 12,
+    "torch_threads": 8,
+    "ram_total_gb": 7.95,
+    "cuda_available": false,
+    "cuda_device": null,
+    "torch": "2.10.0+cpu",
+    "torchvision": "0.25.0",
+    "numpy": "1.26.4",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.15.3",
+    "pillow": "10.4.0"
+  },
+  "categories": [
+    {
+      "category": "bottle",
+      "status": "ok",
+      "fit_images": 167,
+      "val_images": 42,
+      "models": {
+        "patchcore": {
+          "artifact": "models/bottle/patchcore/artifact.pt",
+          "fit_seconds": 22.738,
+          "reload_passed": true
+        },
+        "padim": {
+          "artifact": "models/bottle/padim/artifact.pt",
+          "fit_seconds": 20.521,
+          "reload_passed": true
+        }
+      },
+      "process_rss_gb": 0.74
+    },
+    {
+      "category": "capsule",
+      "status": "ok",
+      "fit_images": 175,
+      "val_images": 44,
+      "models": {
+        "patchcore": {
+          "artifact": "models/capsule/patchcore/artifact.pt",
+          "fit_seconds": 27.595,
+          "reload_passed": true
+        },
+        "padim": {
+          "artifact": "models/capsule/padim/artifact.pt",
+          "fit_seconds": 27.256,
+          "reload_passed": true
+        }
+      },
+      "process_rss_gb": 0.87
+    },
+    {
+      "category": "grid",
+      "status": "ok",
+      "fit_images": 211,
+      "val_images": 53,
+      "models": {
+        "patchcore": {
+          "artifact": "models/grid/patchcore/artifact.pt",
+          "fit_seconds": 30.262,
+          "reload_passed": true
+        },
+        "padim": {
+          "artifact": "models/grid/padim/artifact.pt",
+          "fit_seconds": 27.769,
+          "reload_passed": true
+        }
+      },
+      "process_rss_gb": 1.08
+    }
+  ]
+}

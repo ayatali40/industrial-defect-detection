@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "industrial-defect-detection"
+version = "0.1.0"
+description = "Unsupervised industrial anomaly detection and localization on MVTec AD (PatchCore + PaDiM)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Industrial Defect Detection contributors" }]
+dependencies = [
+  "torch==2.10.0",
+  "torchvision==0.25.0",
+  "numpy==1.26.4",
+  "Pillow==10.4.0",
+  "scikit-learn==1.7.2",
+  "scipy==1.15.3",
+  "pandas==2.3.3",
+  "matplotlib==3.10.7",
+  "seaborn==0.13.2",
+  "PyYAML==6.0.3",
+  "tqdm==4.67.3",
+  "psutil>=5.9",
+  "streamlit==1.32.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==9.1.1",
+  "ruff>=0.6",
+  "nbformat==5.11.1",
+  "nbconvert==7.17.1",
+  "notebook==7.6.3",
+  "jupyter",
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+  "integration: exercises real model artifacts or the real dataset",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src", "scripts", "tests", "app"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"notebooks/*" = ["E402"]
+"scripts/*" = ["E402"]
